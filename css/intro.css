@@ -1,0 +1,151 @@
+/* ==========================================================================
+   STRIPE CINEMATIC INTRO — INTRO STYLES
+   Failsafe Principle: The logo is visible by default in pure HTML+CSS.
+   JavaScript only enhances and animates it when successfully initialized.
+   ========================================================================== */
+
+#intro {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  background-color: #050814;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+/* When intro is dismissed or skipped */
+#intro.is-complete {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  display: none !important;
+}
+
+/* Canvas for controlled fragment particles (underneath logo) */
+#intro-particles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Centered Typography — GUARANTEED VISIBLE BY DEFAULT */
+#intro-logo {
+  position: relative;
+  z-index: 1000000;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(4rem, 15vw, 14rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #ffffff !important;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  perspective: 1000px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* VISIBLE BY DEFAULT (Failsafe) */
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Individual letter spans — GUARANTEED VISIBLE BY DEFAULT */
+#intro-logo span {
+  display: inline-block !important;
+  position: relative;
+  color: #ffffff !important;
+  transform-origin: center center;
+  will-change: transform, opacity, filter;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+
+  /* VISIBLE BY DEFAULT (Failsafe) */
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+  filter: none;
+}
+
+/* Intro HUD Controls: Sound Toggle and Skip Button */
+#sound-toggle,
+#skip-intro {
+  position: absolute;
+  z-index: 1000001;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.82);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+#sound-toggle:hover,
+#skip-intro:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+#sound-toggle {
+  top: 1.75rem;
+  right: 5.5rem;
+}
+
+#sound-toggle.is-muted {
+  color: rgba(255, 255, 255, 0.45);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#skip-intro {
+  top: 1.75rem;
+  right: 1.75rem;
+}
+
+/* Homepage main container state (underneath intro) */
+#site {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 640px) {
+  #intro-logo {
+    font-size: clamp(3.25rem, 16vw, 7rem);
+    letter-spacing: -0.02em;
+  }
+  #sound-toggle {
+    top: 1rem;
+    right: 4.8rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+  }
+  #skip-intro {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stripe — Financial Operating System for Global Enterprise</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- =========================================================================
+       CINEMATIC INTRO STAGE (FAILSAFE: LOGO VISIBLE BY DEFAULT)
+       ========================================================================= -->
+  <div id="intro">
+    <div id="intro-logo" aria-label="Stripe">
+      <span>S</span>
+      <span>T</span>
+      <span>R</span>
+      <span>I</span>
+      <span>P</span>
+      <span>E</span>
+    </div>
+
+    <canvas id="intro-particles"></canvas>
+
+    <button id="sound-toggle" type="button">Sound</button>
+    <button id="skip-intro" type="button">Skip</button>
+  </div>
+
+  <!-- =========================================================================
+       ELITE OBSIDIAN FINTECH LANDING PAGE
+       ========================================================================= -->
+  <main id="site">
+    <!-- Atmospheric Ambient Grid Background -->
+    <div class="site-background"></div>
+
+    <!-- Executive Navigation Bar -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#" class="nav-brand" aria-label="Stripe Home">
+          <!-- SVG Stripe Wordmark -->
+          <svg class="stripe-logo-svg" viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg">
+            <path d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v2.77c-1.1.58-2.6 1-4.7 1-4.22 0-6.85-2.62-6.85-6.9 0-3.9 2.54-6.87 6.44-6.87 4.04 0 5.92 3.07 5.92 6.85v1.55zm-4.26-2.2c0-1.57-.86-2.6-2.12-2.6-1.32 0-2.16 1.05-2.25 2.6h4.37zM36.12 9.07c0-.85-.7-1.46-1.84-1.46-1.28 0-2.65.55-3.8 1.25V6.2c1.38-.6 2.93-.9 4.3-.9 3.03 0 5.1 1.63 5.1 4.54v9.64h-3.76v-1.63c-1.12 1.13-2.62 1.83-4.32 1.83-2.9 0-4.9-1.95-4.9-4.78 0-3.15 2.53-4.73 6.9-4.73.86 0 1.63.07 2.42.2v-.7zm0 3.32c-.7-.14-1.44-.22-2.24-.22-2.28 0-3.4.8-3.4 2.14 0 1.2.9 1.95 2.2 1.95 1.5 0 2.76-.84 3.44-2.12v-1.75zM22.95 3.12v2.76h3.4v2.96h-3.4v6.8c0 1.23.63 1.6 1.7 1.6.6 0 1.15-.07 1.65-.2v2.72c-.75.3-1.85.42-2.85.42-3.1 0-4.25-1.55-4.25-4.3V8.84H16.4V5.88h2.75V3.12h3.8zM9.54 13.06c0-2.2-1.78-3.26-4.63-3.6-1.8-.22-2.4-.66-2.4-1.4 0-.82.8-1.4 2.18-1.4 1.34 0 2.75.46 3.93 1.16V4.9c-1.28-.52-2.67-.78-4.08-.78-3.7 0-6 1.98-6 4.96 0 2.3 1.7 3.3 4.5 3.65 1.83.24 2.5.7 2.5 1.48 0 .9-.9 1.52-2.38 1.52-1.6 0-3.23-.62-4.5-1.48v2.96c1.4.67 2.98 1 4.54 1 3.9 0 6.34-1.95 6.34-5.15z"/>
+          </svg>
+          <span class="nav-badge-pill">INFRASTRUCTURE 2.6</span>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#protocols" class="nav-link">Protocols</a></li>
+            <li><a href="#treasury" class="nav-link">Treasury & FX</a></li>
+            <li><a href="#scale" class="nav-link">Network Scale</a></li>
+            <li><a href="#case-studies" class="nav-link">Enterprise</a></li>
+            <li><a href="#cta" class="nav-link">Sandbox</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#" class="btn btn-secondary">Client Portal</a>
+          <a href="#cta" class="btn btn-primary">Deploy Rails</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <a href="#protocols" class="spec-pill">
+          <span class="spec-dot"></span>
+          <span>PROTOCOL 4.2 ACTIVE — HIGH FREQUENCY SETTLEMENT ENGINE</span>
+        </a>
+
+        <h1 class="hero-title">
+          The Financial Operating System for Global Enterprise
+        </h1>
+
+        <p class="hero-subtitle">
+          Move liquidity at the speed of the internet. Orchestrate global multi-currency treasury, automated cross-border clearing, and programmatic card issuance with surgical precision.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#cta" class="btn btn-primary" style="padding: 0.85rem 1.65rem; font-size: 0.9375rem;">
+            <span>Deploy Infrastructure</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#treasury" class="btn btn-secondary" style="padding: 0.85rem 1.65rem; font-size: 0.9375rem;">
+            <span>Explore Treasury Engine</span>
+          </a>
+        </div>
+
+        <!-- Hero Showcase: 3D Metal Card & Live Streaming Ledger -->
+        <div class="hero-showcase-grid">
+          <!-- Left: Brushed Obsidian Card Artifact -->
+          <div class="metal-card-wrapper">
+            <div class="metal-card" id="interactive-card">
+              <div class="card-top">
+                <div class="chip-gold"></div>
+                <svg class="contactless-icon" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8.5 16.5a5 5 0 0 1 0-9"/>
+                  <path d="M12 19a8.5 8.5 0 0 0 0-14"/>
+                  <path d="M15.5 21.5a12 12 0 0 0 0-19"/>
+                </svg>
+              </div>
+
+              <div class="card-number">5412 ···· ···· 8892</div>
+
+              <div class="card-bottom">
+                <div>
+                  <div class="card-holder-label">Corporate Treasury Account</div>
+                  <div class="card-holder-name">Enterprise Global Corp</div>
+                </div>
+                <div class="card-brand-mark">STRIPE</div>
+              </div>
+            </div>
+
+            <div class="card-tier-badge">
+              <span>TITANIUM COMMERCIAL PROGRAM</span>
+              <span>LIMIT: UNRESTRICTED</span>
+            </div>
+          </div>
+
+          <!-- Right: Live Streaming Financial Settlement Ledger -->
+          <div class="ledger-container">
+            <div class="ledger-header">
+              <div class="ledger-title-group">
+                <div class="pulse-emerald"></div>
+                <span class="ledger-title">Live Settlement Engine (LSE-1)</span>
+              </div>
+              <span class="ledger-live-counter" id="ledger-counter">STREAMING: 2,490 TX/SEC</span>
+            </div>
+
+            <div class="ledger-stream" id="ledger-stream-box">
+              <div class="ledger-row">
+                <span class="ledger-time">14:28:44.201</span>
+                <span class="ledger-entity">OpenAI LP — Enterprise API Usage</span>
+                <span class="ledger-amount">+$124,500.00</span>
+                <span class="ledger-status"><span class="status-tag status-settled">SETTLED</span></span>
+              </div>
+              <div class="ledger-row">
+                <span class="ledger-time">14:28:43.892</span>
+                <span class="ledger-entity">BMW Group Europe — Mobility Fleet</span>
+                <span class="ledger-amount">+€84,320.00</span>
+                <span class="ledger-status"><span class="status-tag status-settled">SETTLED</span></span>
+              </div>
+              <div class="ledger-row">
+                <span class="ledger-time">14:28:43.110</span>
+                <span class="ledger-entity">Anthropic PBC — Compute Cluster Sub</span>
+                <span class="ledger-amount">+$72,190.00</span>
+                <span class="ledger-status"><span class="status-tag status-settled">SETTLED</span></span>
+              </div>
+              <div class="ledger-row">
+                <span class="ledger-time">14:28:42.645</span>
+                <span class="ledger-entity">Shopify Merchants Global — Clearing</span>
+                <span class="ledger-amount">+$310,400.00</span>
+                <span class="ledger-status"><span class="status-tag status-settled">SETTLED</span></span>
+              </div>
+              <div class="ledger-row">
+                <span class="ledger-time">14:28:41.980</span>
+                <span class="ledger-entity">Hermès International — Retail Direct</span>
+                <span class="ledger-amount">+€41,800.00</span>
+                <span class="ledger-status"><span class="status-tag status-settled">SETTLED</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutional Partners Strip -->
+    <section class="partner-strip">
+      <div class="container partner-strip-inner">
+        <a href="#" class="partner-mono-brand">AMAZON</a>
+        <a href="#" class="partner-mono-brand">OPENAI</a>
+        <a href="#" class="partner-mono-brand">ALPHABET</a>
+        <a href="#" class="partner-mono-brand">BMW GROUP</a>
+        <a href="#" class="partner-mono-brand">SALESFORCE</a>
+        <a href="#" class="partner-mono-brand">HERMÈS</a>
+        <a href="#" class="partner-mono-brand">SHOPIFY</a>
+        <a href="#" class="partner-mono-brand">ANTHROPIC</a>
+      </div>
+    </section>
+
+    <!-- Modular Financial Protocols (01 - 06) -->
+    <section id="protocols" class="section-wrapper">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <span class="section-kicker">MODULAR PROTOCOLS</span>
+            <h2 class="section-heading">Engineered for complex enterprise workflows</h2>
+          </div>
+          <p class="section-lead">
+            Six foundational financial protocols orchestrated across global central bank rails with deterministic execution and sub-second settlement.
+          </p>
+        </div>
+
+        <div class="protocol-grid">
+          <!-- 01 Liquidity & Settlement -->
+          <div class="protocol-card">
+            <div>
+              <span class="protocol-index">PROTOCOL / 01</span>
+              <h3 class="protocol-title">Liquidity & Settlement</h3>
+              <p class="protocol-desc">
+                Autonomous gross settlement engine connecting local domestic payment clearing across 195+ jurisdictions with zero pre-funding overhead.
+              </p>
+            </div>
+            <div class="protocol-telemetry">
+              <span class="telemetry-lbl">ENGINE LATENCY</span>
+              <span class="telemetry-val">&lt; 14ms (EDGE)</span>
+            </div>
+          </div>
+
+          <!-- 02 Autonomous Risk Radar -->
+          <div class="protocol-card">
+            <div>
+              <span class="protocol-index">PROTOCOL / 02</span>
+              <h3 class="protocol-title">Autonomous Risk Radar</h3>
+              <p class="protocol-desc">
+                Machine-learned fraud prevention evaluating over 500 risk dimensions per charge in real-time without introducing checkout friction.
+              </p>
+            </div>
+            <div class="protocol-telemetry">
+              <span class="telemetry-lbl">DISPUTE RATE</span>
+              <span class="telemetry-val">0.001% GLOBAL</span>
+            </div>
+          </div>
+
+          <!-- 03 Multi-Tenant Connect -->
+          <div class="protocol-card">
+            <div>
+              <span class="protocol-index">PROTOCOL / 03</span>
+              <h3 class="protocol-title">Multi-Tenant Connect</h3>
+              <p class="protocol-desc">
+                Global marketplace infrastructure with integrated KYC/KYB identity verification, compliant funds splitting, and programmable seller payouts.
+              </p>
+            </div>
+            <div class="protocol-telemetry">
+              <span class="telemetry-lbl">PAYOUT CORRIDORS</span>
+              <span class="telemetry-val">190+ COUNTRIES</span>
+            </div>
+          </div>
+
+          <!-- 04 Programmatic Issuance -->
+          <div class="protocol-card">
+            <div>
+              <span class="protocol-index">PROTOCOL / 04</span>
+              <h3 class="protocol-title">Programmatic Issuance</h3>
+              <p class="protocol-desc">
+                Generate virtual and commercial physical cards on demand with microsecond webhook authorization hooks and fine-grained budget fences.
+              </p>
+            </div>
+            <div class="protocol-telemetry">
+              <span class="telemetry-lbl">PROVISION TIME</span>
+              <span class="telemetry-val">480ms P99</span>
+            </div>
+          </div>
+
+          <!-- 05 Embedded Treasury -->
+          <div class="protocol-card">
+            <div>
+              <span class="protocol-index">PROTOCOL / 05</span>
+              <h3 class="protocol-title">Embedded Treasury</h3>
+              <p class="protocol-desc">
+                Provision programmatic interest-bearing commercial deposit accounts, automated ACH/FedNow transfers, and custom multi-currency ledgering.
+              </p>
+            </div>
+            <div class="protocol-telemetry">
+              <span class="telemetry-lbl">CUSTODY SLA</span>
+              <span class="telemetry-val">FDIC PASS-THROUGH</span>
+            </div>
+          </div>
+
+          <!-- 06 Autonomous Tax Matrix -->
+          <div class="protocol-card">
+            <div>
+              <span class="protocol-index">PROTOCOL / 06</span>
+              <h3 class="protocol-title">Autonomous Tax Matrix</h3>
+              <p class="protocol-desc">
+                Real-time automated sales tax, VAT, and GST calculation with dynamic cross-border threshold monitoring and automatic local filings.
+              </p>
+            </div>
+            <div class="protocol-telemetry">
+              <span class="telemetry-lbl">JURISDICTIONS</span>
+              <span class="telemetry-val">70+ NATIONS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Treasury & Live FX Engine -->
+    <section id="treasury" class="section-wrapper">
+      <div class="container">
+        <div class="treasury-panel">
+          <div class="treasury-left">
+            <span class="section-kicker">TREASURY PROTOCOL</span>
+            <h3>Multi-Currency Liquidity & Automated FX</h3>
+            <p>
+              Eliminate FX slippage and expensive correspondent banking markups. Convert, hedge, and settle treasury balances across 135+ currencies at institutional interbank benchmark rates.
+            </p>
+            <div style="display: flex; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
+              <div>
+                <div style="font-size: 1.5rem; font-weight: 800; font-family: var(--font-mono); color: #fff;">0.00%</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">PRE-FUNDING DRAG</div>
+              </div>
+              <div>
+                <div style="font-size: 1.5rem; font-weight: 800; font-family: var(--font-mono); color: #fff;">&lt; 50ms</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">FX QUOTE EXECUTION</div>
+              </div>
+              <div>
+                <div style="font-size: 1.5rem; font-weight: 800; font-family: var(--font-mono); color: #fff;">135+</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">SUPPORTED CURRENCIES</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive FX Box -->
+          <div class="fx-converter-box">
+            <div class="fx-input-row">
+              <span class="fx-label">Treasury Capital (Sell)</span>
+              <div class="fx-input-wrap">
+                <input type="number" id="fx-amount-input" class="fx-input" value="100000" min="100" step="1000">
+                <select id="fx-from-currency" class="fx-currency-select" aria-label="Source Currency">
+                  <option value="USD" selected>USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="SGD">SGD</option>
+                  <option value="CHF">CHF</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="fx-divider">
+              <button type="button" id="fx-swap-btn" class="fx-swap-badge" title="Swap currencies">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 16V4m0 0L3 8m4-4l4 4m6 4v12m0 0l4-4m-4 4l-4-4"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="fx-input-row">
+              <span class="fx-label">Settled Liquidity (Buy)</span>
+              <div class="fx-input-wrap">
+                <input type="text" id="fx-output-amount" class="fx-input" value="92,400.00" readonly>
+                <select id="fx-to-currency" class="fx-currency-select" aria-label="Target Currency">
+                  <option value="USD">USD</option>
+                  <option value="EUR" selected>EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="SGD">SGD</option>
+                  <option value="CHF">CHF</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="fx-rate-summary">
+              <span id="fx-rate-text">1 USD = 0.9240 EUR (Live Interbank)</span>
+              <span style="color: var(--accent-emerald);">Spread: 0.00%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Network Scale -->
+    <section id="scale" class="section-wrapper">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <span class="section-kicker">PLANETARY RESILIENCE</span>
+            <h2 class="section-heading">Audited network telemetry at global scale</h2>
+          </div>
+          <p class="section-lead">
+            Battle-tested infrastructure engineering designed for fault tolerance, active-active multi-region redundancy, and continuous uptime.
+          </p>
+        </div>
+
+        <div class="scale-grid">
+          <div class="scale-card">
+            <div class="scale-number">$1.42T+</div>
+            <div class="scale-label">Processed Annual Volume</div>
+            <div class="scale-desc">Total commerce flow orchestrated through Stripe's high-reliability API mesh in 2025.</div>
+          </div>
+
+          <div class="scale-card">
+            <div class="scale-number">99.999%</div>
+            <div class="scale-label">Historical Availability SLA</div>
+            <div class="scale-desc">Exceeding enterprise four-nines with zero planned maintenance windows.</div>
+          </div>
+
+          <div class="scale-card">
+            <div class="scale-number">500M+</div>
+            <div class="scale-label">Link Verified Consumers</div>
+            <div class="scale-desc">Global buyers pre-authenticated for cryptographic 1-click accelerated checkout.</div>
+          </div>
+
+          <div class="scale-card">
+            <div class="scale-number">24.5k+</div>
+            <div class="scale-label">Peak Invocations / Sec</div>
+            <div class="scale-desc">Stress-validated throughput during synchronized global shopping spikes.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutional Case Studies -->
+    <section id="case-studies" class="section-wrapper">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <span class="section-kicker">INSTITUTIONAL VALIDATION</span>
+            <h2 class="section-heading">Trusted by foundational industry leaders</h2>
+          </div>
+        </div>
+
+        <div class="case-grid">
+          <div class="case-item">
+            <div>
+              <div class="case-client">OpenAI</div>
+              <p class="case-quote">
+                “When scaling ChatGPT Plus to millions of active subscribers across 160 nations, Stripe’s autonomous fraud detection and dynamic authorization retry engine guaranteed 99.999% revenue capture.”
+              </p>
+            </div>
+            <div class="case-stat-block">
+              <div class="case-stat-number">250M+</div>
+              <div class="case-stat-label">MONTHLY API TRANSACTIONS</div>
+            </div>
+          </div>
+
+          <div class="case-item">
+            <div>
+              <div class="case-client">BMW Group</div>
+              <p class="case-quote">
+                “Consolidating our digital mobility ecosystem across 34 European markets reduced cross-border friction and cut treasury reconciliation latency from days down to seconds.”
+              </p>
+            </div>
+            <div class="case-stat-block">
+              <div class="case-stat-number">-64%</div>
+              <div class="case-stat-label">RECONCILIATION OVERHEAD</div>
+            </div>
+          </div>
+
+          <div class="case-item">
+            <div>
+              <div class="case-client">Anthropic</div>
+              <p class="case-quote">
+                “Stripe’s programmatic usage metering and high-throughput invoice engine allowed our engineering teams to bill custom enterprise tokens with cryptographic reliability.”
+              </p>
+            </div>
+            <div class="case-stat-block">
+              <div class="case-stat-number">99.999%</div>
+              <div class="case-stat-label">BILLING PRECISION AT SCALE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Call To Action -->
+    <section id="cta" class="executive-cta">
+      <div class="container">
+        <h2 class="cta-headline">Deploy on enterprise financial infrastructure today.</h2>
+        <p class="cta-subhead">
+          Join the world's leading technology platforms and enterprise institutions running their mission-critical financial rails on Stripe.
+        </p>
+        <div class="hero-cta-group" style="justify-content: center; margin-bottom: 0;">
+          <a href="#" class="btn btn-primary" style="padding: 0.95rem 2rem; font-size: 1rem;">
+            <span>Request Enterprise Sandbox</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#" class="btn btn-secondary" style="padding: 0.95rem 2rem; font-size: 1rem;">
+            <span>Speak with Solutions Architect</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Production Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-nav-grid">
+          <div>
+            <svg class="stripe-logo-svg" viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg">
+              <path d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v2.77c-1.1.58-2.6 1-4.7 1-4.22 0-6.85-2.62-6.85-6.9 0-3.9 2.54-6.87 6.44-6.87 4.04 0 5.92 3.07 5.92 6.85v1.55zm-4.26-2.2c0-1.57-.86-2.6-2.12-2.6-1.32 0-2.16 1.05-2.25 2.6h4.37zM36.12 9.07c0-.85-.7-1.46-1.84-1.46-1.28 0-2.65.55-3.8 1.25V6.2c1.38-.6 2.93-.9 4.3-.9 3.03 0 5.1 1.63 5.1 4.54v9.64h-3.76v-1.63c-1.12 1.13-2.62 1.83-4.32 1.83-2.9 0-4.9-1.95-4.9-4.78 0-3.15 2.53-4.73 6.9-4.73.86 0 1.63.07 2.42.2v-.7zm0 3.32c-.7-.14-1.44-.22-2.24-.22-2.28 0-3.4.8-3.4 2.14 0 1.2.9 1.95 2.2 1.95 1.5 0 2.76-.84 3.44-2.12v-1.75zM22.95 3.12v2.76h3.4v2.96h-3.4v6.8c0 1.23.63 1.6 1.7 1.6.6 0 1.15-.07 1.65-.2v2.72c-.75.3-1.85.42-2.85.42-3.1 0-4.25-1.55-4.25-4.3V8.84H16.4V5.88h2.75V3.12h3.8zM9.54 13.06c0-2.2-1.78-3.26-4.63-3.6-1.8-.22-2.4-.66-2.4-1.4 0-.82.8-1.4 2.18-1.4 1.34 0 2.75.46 3.93 1.16V4.9c-1.28-.52-2.67-.78-4.08-.78-3.7 0-6 1.98-6 4.96 0 2.3 1.7 3.3 4.5 3.65 1.83.24 2.5.7 2.5 1.48 0 .9-.9 1.52-2.38 1.52-1.6 0-3.23-.62-4.5-1.48v2.96c1.4.67 2.98 1 4.54 1 3.9 0 6.34-1.95 6.34-5.15z"/>
+            </svg>
+            <p class="footer-brand-summary">
+              Stripe is a suite of programmatic APIs powering digital commerce, multi-tenant payouts, and global banking infrastructure.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Protocols</h4>
+            <ul class="footer-link-list">
+              <li><a href="#protocols">Liquidity & Settlement</a></li>
+              <li><a href="#protocols">Autonomous Radar</a></li>
+              <li><a href="#protocols">Multi-Tenant Connect</a></li>
+              <li><a href="#protocols">Programmatic Issuing</a></li>
+              <li><a href="#protocols">Embedded Treasury</a></li>
+              <li><a href="#protocols">Global Tax Matrix</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Solutions</h4>
+            <ul class="footer-link-list">
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">Enterprise Global SaaS</a></li>
+              <li><a href="#">Two-Sided Marketplaces</a></li>
+              <li><a href="#">Embedded Finance</a></li>
+              <li><a href="#">Cross-Border Remittance</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Developers</h4>
+            <ul class="footer-link-list">
+              <li><a href="#">API Reference (v2026)</a></li>
+              <li><a href="#">SDK Repositories</a></li>
+              <li><a href="#">CLI Developer Tooling</a></li>
+              <li><a href="#">Webhooks & Events</a></li>
+              <li><a href="#">Edge Network Status</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Institutional</h4>
+            <ul class="footer-link-list">
+              <li><a href="#">SOC 1 & SOC 2 Reports</a></li>
+              <li><a href="#">PCI-DSS Level 1</a></li>
+              <li><a href="#">Regulatory Licenses</a></li>
+              <li><a href="#">Treasury Custody</a></li>
+              <li><a href="#">Security Safeguards</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-baseline">
+          <div>© 2026 Stripe, Inc. All rights reserved. Architectural benchmarks and telemetry audited annually.</div>
+          <div class="status-badge-inline">
+            <span class="pulse-emerald" style="width: 6px; height: 6px;"></span>
+            <span>All Global Core Rails Operational (99.999% SLA)</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Replay Intro Action Button -->
+    <div class="floating-actions">
+      <button class="replay-intro-btn replay-trigger" title="Re-experience the cinematic intro">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+          <path d="M3 3v5h5"/>
+        </svg>
+        <span>Replay Intro</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       SCRIPT LOADING (VERIFIED RELATIVE PATHS)
+       ========================================================================= -->
+  <script src="./js/fragment-engine.js"></script>
+  <script src="./js/audio-engine.js"></script>
+  <script src="./js/intro-engine.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
