@@ -52,25 +52,7 @@ PERFORMANCE   : 60 FPS DETERMINISTIC TIMELINE
 
 ---
 
-## 🚀 QUICK START
 
-No bundlers. No package managers. No build pipeline required.
-
-### 1. Direct Execution
-Open `index.html` directly in any modern browser:
-```powershell
-Start-Process "index.html"
-```
-
-### 2. Local HTTP Server (Optional)
-```powershell
-python -m http.server 8080
-# or
-npx serve .
-```
-Navigate to: `http://localhost:8080`
-
----
 
 ## ⌨️ OPERATOR CONTROLS
 
